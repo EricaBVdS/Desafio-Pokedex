@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!--Normalize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--estilo-->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+
+  <main class="container">
+        <h1>Pokedex</h1>
+        <form class="form">
+
+            <input type="search" class="input_search" placeholder="Name or Number" required>
+        </form>
+        <button class="btn btn-prev" type="button"><img src="./imgs/seta-left.svg" alt=""></button>
+        <div class="card " >
+            <img class="pokemon_img" src="#" alt="">   
+            <span class="number"></span>
+            
+            <ol id="pokemonList" class="pokemons">
+                <li class="pokemon">
+                    <span class="name"></span>
+                    <div class="details">
+                        <ol class="types">
+                           
+                        </ol>
+                        <div class="about">
+                            <ol>
+                                <li >Height
+                                    <ol>
+                                        <li class="info height"></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <ol>
+                                <li >Weight
+                                    <ol>
+                                        <li class="info weight">000</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                            <ol>
+                                <li >Abilities
+                                    <ol class="abilities" >
+                                        <li class="info ability">000 </li>
+                                        <li class="info ability">000</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div> 
+                    </div> 
+                </li>
+            </ol>      
+        </div>
+        
+        <button class="btn btn-next" type="button"><img src="./imgs/seta-right.svg" alt=""></button>
+  </main>
+
+  <script src="./js/main.js"></script>
+ 
+</body>
+</html>

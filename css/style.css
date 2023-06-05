@@ -1,0 +1,302 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #DBDCDC;
+    font-family: 'Roboto';
+}
+
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 350px;
+    height: 449px;
+    background-image: url('../imgs/pokebolafundo.png');
+    border-radius: 10px;
+    
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 38px;
+    background-color:#F56C6C;
+    border: none;
+    border-radius: 30px;
+}
+
+.btn img {
+    width: 101px;
+    height: 30px;
+}
+
+
+.normal { 
+    background-color: #a6a877
+}
+.grass {
+    background-color: #77c85e
+}
+.fire {
+    background-color: #ee7f30
+}
+.water{ 
+    background-color: #678fee
+}
+.electric{ 
+    background-color: #f7cf2e
+}
+.ice {
+    background-color: #98d5d7
+}
+.ground {
+    background-color: #dfbf69
+}
+.flying {
+    background-color: #a98ff0
+}
+.poison {
+    background-color: #a040a0
+}
+.fighting {
+    background-color: #bf3029
+}
+.psychic{ 
+    background-color: #f65687
+}
+.dark {
+    background-color: #725847
+}
+.rock {
+    background-color: #b8a137
+}
+.bug {
+    background-color: #a8b720
+}
+.ghost {
+    background-color: #6e5896
+}
+.steel {
+    background-color: #b9b7cf
+}
+.dragon {
+    background-color: #6f38f6
+}
+.fairy {
+    background-color: #f9aec7
+}
+
+
+.pokemon_img{
+    max-width: 100%;
+    height: 100px;
+}
+
+ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.number{
+    position: absolute;
+    right: 32px;
+    top: 29px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+}
+.pokemons{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 19px;
+}
+
+.name {
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.details{
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+} 
+.details .types{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 96px;
+    height: 31px;
+    filter: brightness(1.1);
+}
+
+.about{
+    padding-top: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 28px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.about ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   
+}
+.about .info{
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+form {
+    position: absolute;
+    top: 17%;
+    left: 22%;
+    width: 55%;
+}
+
+.input_search {
+    width: 100%;
+    outline: none;
+    border: 3px solid #F56C6C;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #3d3d3d;
+    padding: 2%;
+    
+}
+
+
+@media screen and (max-width: 767px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        gap: 14px;
+
+    }
+
+    h1 {
+        position: absolute;
+        left: 21px;
+        top: 5%;
+    }
+
+    .btn-next{
+        position: absolute;
+        right: 39px;
+        top: 650px;
+    }
+
+    .btn-prev{
+        position: absolute;
+        left: 39px;
+        top: 650px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        max-width: 288px;
+        height: 405px;
+    }
+  }
+
+
+@media screen and (min-width: 768px) {
+   
+    .container {
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 642px;
+    background-image: url('../imgs/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    
+    }
+    h1 {
+        position: absolute;
+        left: 5%;
+        top: 1%;
+    }
+
+    form {
+        position: absolute;
+        top: 8%;
+        left: 40%;
+        width: 20%;
+    }
+  }
+
+ 
